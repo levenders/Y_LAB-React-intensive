@@ -142,7 +142,7 @@ Error generating stack: `+o.message+`
   flex-direction: row;
   align-items: center;
   margin-top: 50px;
-`,t0=()=>{const e=async t=>{try{await Fh({url:"/api/auth/login",method:"POST",body:t})}catch(n){console.error("Ошибка при выполнении запроса:",n)}};return q.jsxs(e0,{children:[q.jsx(bm,{src:"/Y_LAB-React-intensive/lab.svg",width:"350",height:"350",alt:"logo"}),q.jsxs(qm,{children:[q.jsx(Gm,{children:"Вход"}),q.jsx(Qm,{title:"Вход",handleClick:e}),q.jsx("p",{children:"Нет аккаунта?"}),q.jsx("a",{href:"/",children:"Регистрация"})]})]})},n0=Fm`
+`,t0=()=>{const e=async t=>{try{await Fh({url:"/api/auth/login",method:"POST",body:t})}catch(n){console.error("Ошибка при выполнении запроса:",n)}};return q.jsxs(e0,{children:[q.jsx(bm,{src:"/Y_LAB-React-intensive/lab.svg",width:"350",height:"350",alt:"logo"}),q.jsxs(qm,{children:[q.jsx(Gm,{children:"Вход"}),q.jsx(Qm,{title:"Вход",handleClick:e}),q.jsx("p",{children:"Нет аккаунта?"}),q.jsx("a",{href:"/Y_LAB-React-intensive/",children:"Регистрация"})]})]})},n0=Fm`
     :root {
     --black: #000000;
     --gray: #ababab;
