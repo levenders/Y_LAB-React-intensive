@@ -19,7 +19,15 @@ export const StyledButton = styled.button`
   background: ${purple};
   transition: opacity 0.25s;
 
-  &:hover {
-    opacity: 0.85;
+  @media (hover: hover) {
+    &:hover {
+      opacity: 0.85;
+    }
+  }
+
+  @media (hover: none) {
+    &:active {
+      opacity: 0.85;
+    }
   }
 `
