@@ -1,5 +1,6 @@
 import { ApiClient } from '@/api/Api'
 import { Form, Tag } from '@/components'
+
 import { StyledAuthForm, StyledAuthPage, StyledLogo } from './AuthPage.style'
 
 export const AuthPage = () => {

@@ -1,5 +1,6 @@
-import { gray } from '@/styles/colors'
 import styled from 'styled-components'
+
+import { gray } from '@/styles/colors'
 
 export const StyledAuthForm = styled.div`
   display: flex;
