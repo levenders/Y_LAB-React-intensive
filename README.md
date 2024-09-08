@@ -14,3 +14,8 @@
 ## Деплой:
 
 [Посмотреть готовое задание](https://levenders.github.io/Y_LAB-React-intensive/).
+
+## После проверки:
+
+- добавлена проверка [длину вводимого пароля](https://github.com/levenders/Y_LAB-React-intensive/blob/main/src/components/Form/Form.tsx#L53)
+- добавлена обратная связь для пользователя об успешной авторизации
