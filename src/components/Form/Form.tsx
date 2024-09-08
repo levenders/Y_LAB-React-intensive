@@ -28,6 +28,9 @@ export const Form = ({ title, handleClick }: FormProps) => {
 
   const inputRef = useRef<HTMLInputElement>(null)
 
+  const isEmptyFormField = !email.trim() || !password.trim()
+  const isIncorrectPassword = password.length < 6
+
   const focusInput = () => {
     if (inputRef.current) {
       inputRef.current.focus()
@@ -42,8 +45,13 @@ export const Form = ({ title, handleClick }: FormProps) => {
       setError(null)
     })
 
-    if (!email.trim() || !password.trim()) {
+    if (isEmptyFormField) {
       setError('Необходимо заполнить все поля!')
+      return
+    }
+
+    if (isIncorrectPassword) {
+      setError('Пароль не может быть меньше 6 символов!')
       return
     }
 

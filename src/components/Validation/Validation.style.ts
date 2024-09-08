@@ -34,6 +34,7 @@ export const StyledValidation = styled.div`
   color: ${white};
   font-size: 17px;
   font-weight: 200;
+  text-align: center;
 
   animation: ${fadeInOut} 4s linear forwards;
 `
