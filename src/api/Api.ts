@@ -27,5 +27,5 @@ export async function ApiClient({ url, method = 'GET', body }: RequestProps) {
     throw new Error(data ?? 'Неизвестная ошибка')
   }
 
-  console.log(data, params.body)
+  return data
 }
