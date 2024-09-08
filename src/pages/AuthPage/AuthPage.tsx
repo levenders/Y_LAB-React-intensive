@@ -6,14 +6,14 @@ import { StyledAuthForm, StyledAuthPage, StyledLogo } from './AuthPage.style'
 export const AuthPage = () => {
   const handleClick = async (userData: { email: string; password: string }) => {
     try {
-      const responce = await ApiClient({
+      const response = await ApiClient({
         url: '/api/auth/login',
         method: 'POST',
         body: userData,
       })
 
-      alert(responce.message)
-      console.log(responce, userData)
+      alert(response.message)
+      console.log(response, userData)
     } catch (error) {
       console.error('Ошибка при выполнении запроса:', error)
     }
@@ -31,7 +31,7 @@ export const AuthPage = () => {
         <Tag>Вход</Tag>
         <Form title="Вход" handleClick={handleClick} />
         <p>Нет аккаунта?</p>
-        <a href="/">Регистрация</a>
+        <a href="/Y_LAB-React-intensive/">Регистрация</a>
       </StyledAuthForm>
     </StyledAuthPage>
   )
