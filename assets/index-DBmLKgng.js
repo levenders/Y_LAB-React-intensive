@@ -120,6 +120,7 @@ Error generating stack: `+o.message+`
   font-size: 17px;
   font-weight: 200;
   text-align: center;
+  line-height: 95%;
 
   animation: ${Xm} 4s linear forwards;
 `,Jm=({children:e,...t})=>q.jsx(Zm,{...t,children:e}),qm=ft.div`
